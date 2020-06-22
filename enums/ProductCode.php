@@ -1,0 +1,78 @@
+<?php
+
+
+namespace Chronopost\Enums;
+
+
+class ProductCode
+{
+    const CHRONO_RETRAIT_BUREAU = "0";
+    const CHRONO_13 = "1";
+    const CHRONO_10 = "2";
+    const CHRONO_REP = "9";
+    const CHRONO_18 = "16";
+    const CHRONO_EXPRESS = "17";
+    const CHRONO_AGENDA = "20";
+    const CHRONO_PREMIUM = "37";
+    const CHRONO_CLASSIC = "44";
+    const CHRONO_RELAIS_EUROPE = "49";
+    const CHRONO_13_BAL_INSTANCE_RELAIS_ET_POSTE = "58";
+    const CHRONO_8 = "75";
+    const CHRONO_9 = "76";
+    const CHRONO_12 = "77";
+    const CHRONO_TEMP_13 = "78";
+    const CHRONO_9_RELAIS = "80";
+    const CHRONO_RELAIS = "86";
+    const CHRONO_13_INSTANCE_POSTE = "93";
+    const CHRONO_13_REMISE_PAS_DE_PORTE_POSSIBLE = "1F";
+    const CHRONO_13_REMISE_PAS_DE_PORTE_POSSIBLE_2 = "1G";
+    const CHRONO_TEMP_10 = "1K";
+    const CHRONO_MARCHANDISE_DANGEREUSE_13 = "1M";
+    const CHRONO_MARCHANDISE_DANGEREUSE_18 = "1N";
+    const CHRONO_SWAP_13 = "1O";
+    const CHRONO_SWAP_18 = "1P";
+    const CHRONO_13_INSTANCE_AGENCE = "1S";
+    const CHRONO_13_INSTANCE_RELAIS = "1T";
+    const CHRONO_10_SANS_INSTANCE_POSTE = "1U";
+    const CHRONO_18_INSTANCE_AGENCE = "1V";
+    const CHRONO_13_LIVRAISON_COLLECTE = "1Y";
+    const CHRONO_8_MEDICAL = "2A";
+    const CHRONO_9_MEDICAL = "2B";
+    const CHRONO_FRESH_RDV = "2E";
+    const CHRONO_FREEZE_RDV = "2F";
+    const CHRONO_18_LIVRAISON_BOITE_AUX_LETTRES = "2L";
+    const CHRONO_18_LIVRAISON_BOITE_AUX_LETTRES_INSTANCE_MIXTE = "2M";
+    const CHRONO_RDV = "2O";
+    const CHRONO_FRESH_SAME_DAY = "2P";
+    const CHRONO_FREEZE_SAME_DAY = "2Q";
+    const CHRONO_FRESH_13 = "2R";
+    const CHRONO_FREEZE_13 = "2S";
+    const CHRONO_ZENGO_13 = "3J";
+    const CHRONO_ZENGO_RELAIS_13 = "3K";
+    const CHRONO_FRET_DOM = "3S";
+    const CHRONO_RETOUR_EUROPE = "3T";
+    const CHRONO_FRESH_10 = "3X";
+    const CHRONO_FREEZE_10 = "3Y";
+    const CHRONO_18_INSTANCE_RELAIS = "3Z";
+    const CHRONO_SAME_DAY = "4I";
+    const CHRONO_RELAIS_DOM = "4P";
+    const CHRONO_DIRECT = "4Q";
+    const CHRONO_REVERSE_9 = "4R";
+    const CHRONO_REVERSE_10 = "4S";
+    const CHRONO_REVERSE_13 = "4T";
+    const CHRONO_REVERSE_18 = "4U";
+    const CHRONO_FRESH_12 = "4V";
+    const CHRONO_FREEZE_12 = "4W";
+    const CHRONO_FRESH_CLASSIC = "4X";
+    const CHRONO_MEDICAL_10 = "8A";
+    const CHRONO_MEDICAL_13 = "8B";
+    const CHRONO_MEDICAL_18 = "8C";
+    const CHRONO_MEDICAL_10_THERMOSENSIBLE = "8D";
+    const CHRONO_MEDICAL_13_THERMOSENSIBLE = "8E";
+    const CHRONO_MEDICAL_18_THERMOSENSIBLE = "8F";
+    const CHRONO_MEDICAL_MARCHANDISE_DANGEREUSE_13 = "8G";
+    const CHRONO_MEDICAL_MARCHANDISE_DANGEREUSE_18 = "8H";
+    const CHRONO_MEDICAL_MARCHANDISE_DANGEREUSE_13_THERMOSENSIBLE = "8I";
+    const CHRONO_MEDICAL_MARCHANDISE_DANGEREUSE_18_THERMOSENSIBLE = "8J";
+
+}
