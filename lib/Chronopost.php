@@ -4,7 +4,7 @@
 namespace Chronopost;
 
 
-use Chronopost\Classes\QuickcostServiceWSService;
+use Chronopost\Classes\QuickcostWebService;
 use Chronopost\Classes\Shipping;
 use Chronopost\Classes\ShippingResponse;
 use SoapClient;
@@ -41,7 +41,7 @@ class Chronopost
     public function getAvailableProducts($options)
     {
         try {
-            $client_ch = new QuickcostServiceWSService(self::WSDL_SHIPPING_SERVICE."quickcost-cxf/QuickcostServiceWS?wsdl",['trace'=>1]);
+            $client_ch = new QuickcostWebService(self::WSDL_SHIPPING_SERVICE."quickcost-cxf/QuickcostServiceWS?wsdl",['trace'=>1]);
 
             $result = $client_ch->calculateProducts([new \SoapParam($options,"parameters")]);
             echo "====== REQUEST HEADERS =====" . PHP_EOL;

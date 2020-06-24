@@ -1,8 +1,9 @@
 <?php
+namespace Chronopost\RequestModels;
 
-namespace Chronopost\Classes;
+use Chronopost\Interfaces\IAccountInformations;
 
-class Header
+class AccountInformations implements IAccountInformations
 {
     /**
      * Numéro de compte
@@ -10,22 +11,16 @@ class Header
      */
     public $accountNumber;
     /** @var string */
-//    public $idEmit = 'CHRFR';   // Valeur fixe : CHRFR
+    public $idEmit = 'CHRFR';   // Valeur fixe : CHRFR
     /** @var string */
-//    public $identWebPro;
+    public $identWebPro;
     /** @var integer */
-//    public $subAccount;
+    public $subAccount;
     /**
      * Mot de passe correspondant au numéro de compte
      * @var string
      */
     public $password = '';
-
-    public function __construct($accountNumber, $password)
-    {
-        $this->accountNumber = $accountNumber;
-        $this->password = $password;
-    }
 
     /**
      * @return int
@@ -37,34 +32,12 @@ class Header
 
     /**
      * @param int $subAccount
-     * @return Header
+     * @return AccountInformations
      */
     public function setSubAccount($subAccount)
     {
         $this->subAccount = $subAccount;
         return $this;
-    }
-
-    public function __serialize()
-    {
-        $r = [
-            'accountNumber' => $this->getAccountNumber(),
-            'password' => $this->getPassword()
-        ];
-
-        if ($this->getIdEmit() != null) {
-            $r['idEmit'] = $this->getIdEmit();
-        }
-
-        if ($this->getIdentWebPro() != null) {
-            $r['identWebPro'] = $this->getIdentWebPro();
-        }
-
-        if ($this->getSubAccount() != null) {
-            $r['subAccount'] = $this->getSubAccount();
-        }
-
-        return $r;
     }
 
     /**
@@ -77,7 +50,7 @@ class Header
 
     /**
      * @param int $accountNumber
-     * @return Header
+     * @return AccountInformations
      */
     public function setAccountNumber($accountNumber)
     {
@@ -95,7 +68,7 @@ class Header
 
     /**
      * @param string $password
-     * @return Header
+     * @return AccountInformations
      */
     public function setPassword($password)
     {
@@ -113,7 +86,7 @@ class Header
 
     /**
      * @param string $idEmit
-     * @return Header
+     * @return AccountInformations
      */
     public function setIdEmit($idEmit)
     {
@@ -131,7 +104,7 @@ class Header
 
     /**
      * @param string $identWebPro
-     * @return Header
+     * @return AccountInformations
      */
     public function setIdentWebPro($identWebPro)
     {

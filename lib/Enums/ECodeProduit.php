@@ -1,10 +1,7 @@
 <?php
-
-
 namespace Chronopost\Enums;
 
-
-class ProductCode
+class ECodeProduit
 {
     const CHRONO_RETRAIT_BUREAU = "0";
     const CHRONO_13 = "1";

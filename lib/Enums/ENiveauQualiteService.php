@@ -1,10 +1,7 @@
 <?php
-
-
 namespace Chronopost\Enums;
 
-
-class NiveauQualiteService
+class ENiveauQualiteService
 {
     const NUMERO_EXACT = 1;
     const NUMERO_EXTRAPOLE = 2;
