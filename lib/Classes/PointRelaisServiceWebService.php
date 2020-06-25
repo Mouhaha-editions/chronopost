@@ -13,7 +13,6 @@ class PointRelaisServiceWebService extends ChronopostWebService
         parent::__construct($wsdl, $options);
     }
 
-
     /**
      * @param RecherchePointChronopostInterParService $parameters
      * @return \Chronopost\ResponseModels\RecherchePointChronopostInterParService
