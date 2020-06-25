@@ -2,6 +2,7 @@
     "name": "mouhaha-edition/chronopost-soap",
     "license": "GPL-3.0-or-later",
     "description": "Easy way to use chronopost SOAP",
+    "homepage": "https://github.com/Mouhaha-editions/chronopost",
     "keywords": [
         "chronopost",
         "soap"
