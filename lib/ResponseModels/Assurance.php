@@ -6,9 +6,9 @@ namespace Chronopost\ResponseModels;
 class Assurance
 {
     /** @var float */
-    public ?float $plafond;
+    public $plafond;
     /** @var float */
-    public ?float $taux;
+    public $taux;
 
     public function __construct($object)
     {
