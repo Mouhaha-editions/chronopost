@@ -7,72 +7,71 @@ namespace Chronopost\RequestModels;
 use Chronopost\Enums\ECodeProduit;
 use Chronopost\Enums\EServiceList;
 use DateTime;
-use Phalcon\Forms\Element\Date;
 
 class RecherchePointChronopostInterParService extends AccountInformations
 {
     /**
      * @var string
      */
-    private ?string $adress;
+    private $adress;
     /**
      * @var string
      */
-    private ?string $zipCode;
+    private $zipCode;
     /**
      * @var string
      */
-    private ?string $city;
+    private $city;
     /**
      * @var string
      */
-    private ?string $countryCode;
+    private $countryCode;
     /**
      * @var string
      */
-    private ?string $type;
+    private $type;
     /**
      * @var string
      */
-    private ?string $productCode;
+    private $productCode;
     /**
      * @var string
      */
-    private ?string $service;
+    private $service;
     /**
      * @var string
      */
-    private ?string $weight;
+    private $weight;
     /**
      * @var string
      */
-    private ?string $shippingDate;
+    private $shippingDate;
     /**
      * @var string
      */
-    private ?string $maxPointChronopost;
+    private $maxPointChronopost;
     /**
      * @var string
      */
-    private ?string $maxDistanceSearch;
+    private $maxDistanceSearch;
     /**
      * @var string
      */
-    private ?string $holidayTolerant;
+    private $holidayTolerant;
     /**
      * @var string
      */
-    private ?string $serviceList;
+    private $serviceList;
     /**
      * @var string
      */
-    private ?string $language;
+    private $language;
     /**
      * @var string
      */
-    private ?string $version;
+    private $version;
 
-    public function __construct($adress = "15 impasse du pas du roule", $zipCode = "30200", $city = "Chusclan", $countryCode = "FR",$weight = "1", ?DateTime $shippingDate = null,$productCode = ECodeProduit::CHRONO_13, $type = "P",  $service = "L",  $maxPointChronopost = "25", $maxDistanceSearch = "40", $holidayTolerant = "1", $serviceList = EServiceList::RETRAIT, $language = "FR", $version = "2.0")
+    public function __construct($adress = "15 impasse du pas du roule", $zipCode = "30200", $city = "Chusclan", $countryCode = "FR", $weight = "1", ?DateTime $shippingDate = null, $productCode = ECodeProduit::CHRONO_13, $type = "P", $service = "L", $maxPointChronopost = "25", $maxDistanceSearch = "40", $holidayTolerant = "1", $serviceList = EServiceList::RETRAIT, $language = "FR", $version = "2.0")
     {
         $this->adress = $adress;
         $this->zipCode = $zipCode;

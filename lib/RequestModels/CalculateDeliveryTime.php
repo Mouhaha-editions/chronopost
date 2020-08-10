@@ -5,22 +5,20 @@ namespace Chronopost\RequestModels;
 
 
 use Chronopost\Enums\ECodeProduit;
-use Chronopost\Enums\ETypeEnvoi;
 use Chronopost\Enums\ETypeProduit;
-use Chronopost\Exceptions\ChronopostWrongValueException;
 use DateTime;
 
 class CalculateDeliveryTime //extends AccountInformations
 {
-    private ?string $depCountryCode;
-    private ?string $depZipCode;
-    private ?string $arrCountryCode;
-    private ?string $arrZipCode;
-    private ?string $arrCity;
-    private ?string $productCode;
-    private ?string $type;
-    private ?string $service;
-    private ?string $shippingDate;
+    private $depCountryCode;
+    private $depZipCode;
+    private $arrCountryCode;
+    private $arrZipCode;
+    private $arrCity;
+    private $productCode;
+    private $type;
+    private $service;
+    private $shippingDate;
 
     public function __construct($depCountryCode = "FR", $depZipCode = "30200", $arrCountryCode = "FR", $arrZipCode = "30200", $arrCity = "Moloy",$productCode = ECodeProduit::CHRONO_13, $type = ETypeProduit::MATERIEL, $service = 6, ?DateTime $shippingDate = null)
     {
